@@ -1,0 +1,27 @@
+public class Main {
+    public static void exibeValores(int n) {
+        if (n >= 0) {
+            System.out.println(n);
+            exibeValores(n - 1);
+        }
+    }
+
+    public static int somaAteN(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n + somaAteN(n - 1);
+        }
+    }
+
+    public static String inverteString(String str) {
+        if (str.length() == 0) {
+            return str;
+        } else {
+            return inverteString(str.substring(1)) + str.charAt(0);
+        }
+    }
+    
+    
+    
+}
